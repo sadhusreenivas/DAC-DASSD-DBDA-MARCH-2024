@@ -1,19 +1,18 @@
-// import java.lang.*;
+
 public class Driver{
 	
 public static void main(String[] args) {
-	int c=0;
-	// random number in ints 350 - 500
-    for(int i=1; i<=150;i++){
-
-	int n = 350 + (int)(Math.random()*151);
 	
-	System.out.print(" "+n+" ");
-	c++;
-	if(c%15 == 0)
-		System.out.println();
+	 Employee e = new Employee(321,"ABC", 100000);
+	 TechEmp te = new TechEmp(123,"ASDF",100000,10000);
 
-    }
-}
+	 e = te; // upcasting
+
+	 e.getEmployee(); // overriden method
+	 e.calSalary(); // overriden method
+
+
+
+	}
 
 }
