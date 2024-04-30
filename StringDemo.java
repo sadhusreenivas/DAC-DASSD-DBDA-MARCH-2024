@@ -5,14 +5,17 @@ public class StringDemo{
 		String s1 = "James";
 		String s2 = "Gosling";
         s1.concat(s2);
+        System.out.println(s1); // James 
 
-		System.out.println(s1); // immutabble
+        String s3 = "Sachin" + "Tendulkar";
+        System.out.println(s3);
 
+        String s4 = new StringBuffer().append("Sachin").append("Tendulkar").toString();
+        System.out.println(s4);
 
-		StringBuffer sb1 = new StringBuffer("James");
-		StringBuffer sb2 = new StringBuffer("Gosling");
+        String s5 = new StringBuilder().append("Sachin").append("Tendulkar").toString();
+        System.out.println(s5);
 
-		sb1.append(sb2);
-		System.out.println(sb1); // mutable
+		
 	}
 }
